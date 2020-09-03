@@ -1,4 +1,4 @@
-- [ ] Paper to read
+- [X] Paper to read
 # [Paper Notes](RARLNotes.md) 
 - [ ] Data Structure
 - [ ] C++

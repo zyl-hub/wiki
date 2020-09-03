@@ -58,7 +58,7 @@ def downloader(link_set):
 
 if __name__ == '__main__':
     links = []
-    for i in range(12):
+    for i in range(7):
         # 这里的链接地址需要自己在樱花动漫上找到自己想下载的资源，复制网址即可，一般变动的是player/后面的数字，下载的集数由range()控制，比如一共12集，将其修改成range(11)即可
-        links.append('http://www.imomoe.in/player/7860-0-%d.html' % i)
+        links.append('http://www.imomoe.in/player/36-0-%d.html' % i)
     downloader(links)

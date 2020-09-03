@@ -1,10 +1,8 @@
 #include <iostream>
 using namespace std;
 
-int main()
-{
-    cout << "zyl" << endl << "sjtu";
+int main() {
+  cout << "zyl" << endl << "sjtu";
 
-    return 0;
+  return 0;
 }
-
