@@ -74,4 +74,5 @@ class sLinkList : public list<T> {
   int search(const T& x) const;
   T visit(int i) const;
   void traverse() const;
+  void erase(int i);
 };
