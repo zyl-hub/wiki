@@ -1,4 +1,5 @@
 #include "LinkList.h"
+#include <cstdio>
 #include <iostream>
 
 template <class T>
@@ -91,22 +92,43 @@ void sLinkList<T>::traverse() const
 template <class T>
 void sLinkList<T>::erase(int i)
 {
-  node *pre =move(i-1), *delp=pre->next;
-  T tmp=delp->data;
-  int cnt=1;
+  node *pre = move(i - 1), *delp = pre->next;
+  T tmp = delp->data;
+  int cnt = 1;
 
-  pre->next=delp->next;
+  pre->next = delp->next;
   delete delp;
 
-  for(pre=head;pre->next!=0;)
-  {
-    if (pre->next->data==tmp) {
-    delp=pre->next;
-    pre->next=delp->next;
-    delete delp;
-    ++cnt;
+  for (pre = head; pre->next != 0;) {
+    if (pre->next->data == tmp) {
+      delp = pre->next;
+      pre->next = delp->next;
+      delete delp;
+      ++cnt;
+    } else
+      pre = pre->next;
+    currentLength -= cnt;
+  }
+}
+
+//no tested
+template <class T>
+void sLinkList<T>::erase(T x, T y)
+{
+  node *prev = head, *temp = head, *q;
+  while (temp != 0) {
+    if (temp->data >= x && temp->data <= y) {
+      prev = temp;
+      q = temp->next;
+      prev->next = q->next;
+      delete temp;
+      temp = q;
     }
-    else pre=pre->next;
-    currentLength -=cnt;
+    else {
+    prev = temp;
+    q = temp->next;
+    prev->next = q->next;
+    temp = q;
+    }
   }
 }

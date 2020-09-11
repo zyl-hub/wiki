@@ -75,4 +75,49 @@ class sLinkList : public list<T> {
   T visit(int i) const;
   void traverse() const;
   void erase(int i);
+  void erase(T x, T y);
+};
+
+template <class T>
+class dLinkList : public list<T> {
+  private:
+  struct node {
+    T data;
+    node *prev, *next;
+
+    node(const T& x, node* p = 0, node* n = 0)
+    {
+      data = x;
+      next = n;
+      prev = p;
+    }
+    node()
+        : next(0)
+        , prev(0)
+    {
+    }
+    ~node() { }
+  };
+
+  node *head, *tail;
+  int currentLength;
+
+  node* move(int i) const;
+
+  public:
+  dLinkList();
+  ~dLinkList()
+  {
+    clear();
+    delete head;
+    delete tail;
+  }
+
+  void clear();
+  int length() const { return currentLength; }
+  void insert(int i, const T& x);
+  void remove(int i);
+  int search(const T& x) const;
+  T visit(int i) const;
+  void traverse() const;
 };
