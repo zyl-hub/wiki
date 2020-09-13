@@ -5,7 +5,7 @@ int main()
 {
   int a = 0;
   int b = 0;
-  cout << "hello";
+  cout << "hello" << endl;
 
   return 0;
 }
