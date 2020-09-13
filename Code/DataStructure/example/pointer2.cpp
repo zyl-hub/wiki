@@ -10,9 +10,9 @@ int main()
   while (1) {
     cout << "Enter your password:";
     cin >> input;
-    for (int i = 0; i < 8; i++) {
-      cout << pwd[i];
-    }
+    //for (int i = 0; i < 8; i++) {
+      //cout << pwd[i];
+    //}
 
     if (strcmp(pwd, input) == 0) {
       cout << "Welcome!" << endl;

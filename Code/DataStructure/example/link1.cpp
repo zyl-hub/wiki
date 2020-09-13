@@ -13,14 +13,15 @@ struct Node {
 
 int main()
 {
-  Node *head, p, q;
+  Node *head, *p, *q;
 
   // 创建链表
   head = new Node();
-  p = head->next;
-  p = new Node(3);
-  q = p->next;
-  p = new Node(4);
+  p = head->next = new Node(3);
+  //p = new Node(3);
+
+  p->next = new Node(4);
+  //p = new Node(4);
 
   // 输出链表
   p = head;
@@ -31,8 +32,9 @@ int main()
 
   // 删除链表
   while (head != NULL) {
+    q = head->next;
     delete head;
-    head = head->next;
+    head = q;
   }
 
   return 0;
