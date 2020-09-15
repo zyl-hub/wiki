@@ -26,7 +26,7 @@ int main()
   // Êä³öÁ´±í
   p = head;
   while (p != NULL) {
-    cout << p->data << " ";
+    cout << p->data << " " << endl;
     p = p->next;
   }
 
