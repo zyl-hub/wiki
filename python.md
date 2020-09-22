@@ -48,6 +48,8 @@
 
 ## [slots](slots.py) 限定实例的范围
 
+## [property](property.py)
+
 # GUI
 
 ## [Gui](Code/python/Gui.py) use tkinter

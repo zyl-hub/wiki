@@ -1,3 +1,4 @@
+#include <cstdio>
 #include <cstring>
 #include <iomanip>
 #include <iostream>
@@ -5,21 +6,21 @@ using namespace std;
 
 int main()
 {
-  char pwd[8] = "secret", input[8];
+    char input[8];
+    char pwd[8] = "secret";
 
-  while (1) {
-    cout << "Enter your password:";
-    cin >> input;
-    //for (int i = 0; i < 8; i++) {
-      //cout << pwd[i];
-    //}
+    while (1) {
+        cout << "Enter your password:";
+        cin >> input;
 
-    if (strcmp(pwd, input) == 0) {
-      cout << "Welcome!" << endl;
-      break;
-    } else {
-      cout << "Try again!" << endl;
+        cout << &pwd << endl;
+        cout << &input << endl;
+        if (strcmp(pwd, input) == 0) {
+            cout << "Welcome!" << endl;
+            break;
+        } else {
+            cout << "Try again!" << endl;
+        }
     }
-  }
-  return 0;
+    return 0;
 }

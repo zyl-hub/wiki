@@ -9,14 +9,8 @@ int main()
   int k = 0;
   long long int kMax = 0;
 
-  cout << "Input n, k: ";
   cin >> n >> k;
-  if (k >= n) {
-    cout << "Error! n should not be less than k!";
-    return 0;
-  }
   long long int* Ar = new long long int[n];
-  cout << "Input Array: ";
   for (int i = 0; i < n; i++) {
     cin >> Ar[i];
   }
