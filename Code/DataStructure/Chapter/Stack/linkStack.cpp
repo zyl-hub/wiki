@@ -40,3 +40,9 @@ T linkStack<T>::pop()
     delete tmp;
     return x;
 }
+
+template <class T>
+T linkStack<T>::top() const
+{
+    return top_p->data;
+}
