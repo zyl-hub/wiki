@@ -36,7 +36,7 @@ void priorityPrinting(node* array, int length)
         int isMax = 1;
         for (int i = temp; i < length; i++) {
             if (array[i].priority > array[temp].priority) {
-                int isMax = 0;
+                isMax = 0;
             }
         }
         if (!isMax) {
@@ -51,6 +51,10 @@ void priorityPrinting(node* array, int length)
         if (isMax) {
             temp += 1;
         }
+        for (int len = 0; len < length; len++) {
+            cout << '*' << array[len].priority << '\t';
+        }
+        cout << '*';
     }
     for (int i = 0; i < length; i++) {
         if (array[i].isPrint == 1) {
