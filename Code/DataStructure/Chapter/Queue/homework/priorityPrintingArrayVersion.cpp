@@ -23,7 +23,8 @@ int main()
             cin >> tempPriority;
             array[k].priority = tempPriority;
         }
-        array[pos - 1].isPrint = 1;
+        array[pos].isPrint = 1;
+        priorityPrinting(array, length);
     }
     return 0;
 }
@@ -31,18 +32,30 @@ int main()
 void priorityPrinting(node* array, int length)
 {
     int temp = 0;
-    bool flag = 1;
-    while (flag) {
+    while (temp != (length - 1)) {
         int isMax = 1;
-        for (int j = temp; j < length; j++) {
-            //if (array[j].priority > array[temp].priority) {
-                //int isMax = 0;
-            //}
+        for (int i = temp; i < length; i++) {
+            if (array[i].priority > array[temp].priority) {
+                int isMax = 0;
+            }
         }
         if (!isMax) {
             node tempNode;
             tempNode.priority = array[temp].priority;
             tempNode.isPrint = array[temp].isPrint;
+            for (int j = temp; j < length - 1; j++) {
+                array[temp] = array[temp + 1];
+            }
+            array[length - 1] = tempNode;
+        }
+        if (isMax) {
+            temp += 1;
+        }
+    }
+    for (int i = 0; i < length; i++) {
+        if (array[i].isPrint == 1) {
+            cout << i + 1 << endl;
+            return;
         }
     }
 }
