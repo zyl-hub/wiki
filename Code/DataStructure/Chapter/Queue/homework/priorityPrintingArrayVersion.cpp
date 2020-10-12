@@ -18,10 +18,10 @@ int main()
         cin >> length;
         cin >> pos;
         node* array = new node[length];
-        for (int k = 0; k < length; k++) {
+        for (int j = 0; j < length; j++) {
             int tempPriority = 0;
             cin >> tempPriority;
-            array[k].priority = tempPriority;
+            array[j].priority = tempPriority;
         }
         array[pos].isPrint = 1;
         priorityPrinting(array, length);
@@ -44,17 +44,13 @@ void priorityPrinting(node* array, int length)
             tempNode.priority = array[temp].priority;
             tempNode.isPrint = array[temp].isPrint;
             for (int j = temp; j < length - 1; j++) {
-                array[temp] = array[temp + 1];
+                array[j] = array[j + 1];
             }
             array[length - 1] = tempNode;
         }
         if (isMax) {
             temp += 1;
         }
-        for (int len = 0; len < length; len++) {
-            cout << '*' << array[len].priority << '\t';
-        }
-        cout << '*';
     }
     for (int i = 0; i < length; i++) {
         if (array[i].isPrint == 1) {
