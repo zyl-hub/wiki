@@ -50,4 +50,19 @@ void moveToRear(node*& head, node*& rear, int pos)
 
 void priorityPrinting(node*& head, int pos)
 {
+    while (head->next != NULL) {
+        node* tempHead = head;
+        int isMax = 1;
+        while (isMax) {
+            while (tempHead != NULL) {
+                if (tempHead->priority > head->priority) {
+                    isMax = 0;
+                }
+                tempHead = tempHead->next;
+            }
+        }
+        if (!isMax) {
+            head = head->next;
+        }
+    }
 }
