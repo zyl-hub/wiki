@@ -54,3 +54,7 @@
 
 ## [Gui](Code/python/Gui.py) use tkinter
 溢出
+
+# Matplot
+
+## [matplotlib](Code/python/matplot.py) test
