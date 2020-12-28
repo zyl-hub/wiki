@@ -1,4 +1,4 @@
-# [Back to Index](~/vimwiki/index.md)
+# [Back to Index](~/wiki/index.md)
 
 # What I need to do to make a RARL demo
 

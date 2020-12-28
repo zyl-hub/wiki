@@ -3,5 +3,5 @@
 # [Tasks](Tasks.md)
 # [python](python.md)
 # [c plus plus](cpp.md)
-# [webCrawler](Code/webCrawler) 
-# [Datastruct](Code/DataStructure) 
+# [webCrawler](Code/webCrawler)
+# [Datastruct](Code/DataStructure)

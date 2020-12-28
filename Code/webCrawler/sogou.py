@@ -12,6 +12,6 @@ page_text = response.text
 print(page_text)
 
 # step4 持久化存储
-with open('./sogou.html','w',encoding='utf-8') as fp:
+with open('./sogou.html', 'w', encoding='utf-8') as fp:
     fp.write(page_text)
 print("done!")

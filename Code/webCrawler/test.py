@@ -7,7 +7,7 @@ headers = {
 
 url = 'https://bing.ioliu.cn/'
 
-response = requests.get(url = url, headers = headers)
+response = requests.get(url=url, headers=headers)
 
 page_text = response.text
 
