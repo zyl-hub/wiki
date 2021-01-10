@@ -8,7 +8,7 @@
         "type": "leaf",
         "active": true,
         "state": {
-          "type": "graph",
+          "type": "empty",
           "state": {}
         }
       }
@@ -81,6 +81,7 @@
     "width": 300
   },
   "lastOpenFiles": [
+    "Untitled.md",
     "motion.md",
     "webCrawler.md",
     "DataStructure/Chapter/Queue/homework/排队插队.md",
@@ -89,7 +90,6 @@
     "4.7.md",
     "3.7.md",
     "cpp.md",
-    "CPPP/2.7test.md",
-    "python/listAndTuple.py.md"
+    "CPPP/2.7test.md"
   ]
 }
