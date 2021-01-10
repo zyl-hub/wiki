@@ -1,7 +1,6 @@
-# [nvim](../.config/nvim/init.vim)
-# [coc.nvim](~/.config/nvim/coc-settings.json) 
-# [Tasks](Tasks.md)
 # [python](python.md)
-# [c plus plus](cpp.md)
-# [webCrawler](Code/webCrawler)
-# [Datastruct](Code/DataStructure)
+
+# [cpp](cpp.md)
+
+# [webCrawler](webCrawler.md)
+
