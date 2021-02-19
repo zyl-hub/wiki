@@ -24,10 +24,17 @@ $$
  J=\mathbb{E}_{\mathcal{M}}\left[R_{1}\right] 
 $$
 
+## Q-function
+
 the action-value or Q-function
 
 describes the expected return under a policy $\pi$ when taking action $a_t$ from $s_t$
+
 $$
  Q\left(s_{t}, a_{t}\right)=\mathbb{E}_{\mathcal{M}}\left[R_{t} \mid s_{t}, a_{t}\right] 
 $$
+
+## AC
+
+[Actor-Critic](AC.md)
 

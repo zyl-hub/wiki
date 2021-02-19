@@ -29,3 +29,14 @@ reward is based on tracking position and angle references from motion capture da
 
 parametrized reward function为了不同的手部互动而去设计，大多数的参数都是根据捕捉到的动作数据获得，只剩下6个相对容易调节的参数
 
+使用DDPG算法
+
+policy
+
+$$
+ a_{t}=\pi\left(s_{t}\right)+\mathcal{N} 
+$$
+
+$\mathcal{N}$ is a sample from zero mean Normal distribution
+
+零平均正态分布
