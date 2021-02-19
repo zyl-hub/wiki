@@ -14,3 +14,4 @@ $\gamma$ discount factor
 
 Model-free does not require knowledge of transition dynamics requires only sampling from distribution
 
+sesrtn
