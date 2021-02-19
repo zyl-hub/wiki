@@ -65,10 +65,26 @@ $$
 $$
 
 - $r_{p}\left(s_{t}\right)$ position rewar
+- 
 $$
  r_{p}\left(s_{t}\right)=-\sum_{i=1}^{N_{f}} \omega_{p}^{i} \| p_{g}^{i}-p_{r t}^{i} \mid 
 $$
+
+$p_{g}^{i}$ goal position
+
+$p_{r t}^{i}$ current position
+
 - $r_{\alpha}\left(s_{t}\right)$ angle reward
+
+$$
+ r_{\alpha}\left(s_{t}\right)=-\sum_{i=1}^{N_{\alpha}} \omega_{\alpha}^{i}\left\|\alpha_{g}^{i}-\alpha_{r t}^{i}\right\| 
+$$
+
+$a_{g}^{i}$ goal angle
+
+$a_{r t}^{i}$ current angle
+
+$\omega_{p}^{i}, \omega_{\alpha}^{i}$ determine the importance of the specific goal
 
 - $r_{c}\left(s_{t}\right)$ contact reward
 - $r_{a}\left(a_{t}\right)$ penalizes high action input
