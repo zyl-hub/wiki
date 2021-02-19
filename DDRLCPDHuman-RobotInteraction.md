@@ -64,10 +64,17 @@ $$
  r_{F}\left(s_{t}, a_{t}\right)=r_{p}\left(s_{t}\right)+r_{\alpha}\left(s_{t}\right)+r_{c}\left(s_{t}\right)+r_{a}\left(a_{t}\right) 
 $$
 
-- $r_{p}\left(s_{t}\right)$ position reward
+- $r_{p}\left(s_{t}\right)$ position rewar
+$$
+ r_{p}\left(s_{t}\right)=-\sum_{i=1}^{N_{f}} \omega_{p}^{i} \| p_{g}^{i}-p_{r t}^{i} \mid 
+$$
 - $r_{\alpha}\left(s_{t}\right)$ angle reward
+
 - $r_{c}\left(s_{t}\right)$ contact reward
 - $r_{a}\left(a_{t}\right)$ penalizes high action input
+
+
+
 
 
 
