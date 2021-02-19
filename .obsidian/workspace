@@ -4,12 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "d17d30fe99965b00",
+        "id": "efc57de9c35d983b",
         "type": "leaf",
         "active": true,
         "state": {
-          "type": "graph",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "DDRLCPDHuman-RobotInteraction.md",
+            "mode": "source"
+          }
         }
       }
     ],
@@ -50,7 +53,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 201
   },
   "right": {
     "id": "4b59422a3c0c907e",
@@ -66,6 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "DDRLCPDHuman-RobotInteraction.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -78,18 +82,18 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 273
   },
   "lastOpenFiles": [
+    "DDRLCPDHuman-RobotInteraction.md",
+    "EASAADRL.md",
+    "论文索引.md",
+    "4_7.md",
+    "DataStructure.md",
+    "index.md",
+    "python.md",
+    "s.t.md",
     "Untitled.md",
-    "motion.md",
-    "webCrawler.md",
-    "DataStructure/Chapter/Queue/homework/排队插队.md",
-    "DataStructure/Chapter/Tree/完全树判断.md",
-    "2.7.md",
-    "4.7.md",
-    "3.7.md",
-    "cpp.md",
-    "CPPP/2.7test.md"
+    "论文索引.pdf"
   ]
 }
