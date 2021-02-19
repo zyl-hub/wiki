@@ -28,3 +28,4 @@ show how to extract parameters from motion
 reward is based on tracking position and angle references from motion capture data
 
 parametrized reward function为了不同的手部互动而去设计，大多数的参数都是根据捕捉到的动作数据获得，只剩下6个相对容易调节的参数
+
