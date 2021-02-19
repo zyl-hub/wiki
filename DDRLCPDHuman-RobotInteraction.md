@@ -1,3 +1,7 @@
+# task
+
+机器人握手击掌
+
 # Difficulty
 
 controller design remains very challenging and has been
@@ -40,3 +44,31 @@ $$
 $\mathcal{N}$ is a sample from zero mean Normal distribution
 
 零平均正态分布
+
+Our method is able to learn control policies of hand interactions
+using motion capture data of human demonstrations
+
+## Reward function
+
+one reward function for different tasks
+
+consists of two terms
+
+$$
+ r\left(s_{t}, a_{t}\right)=r_{F}\left(s_{t}, a_{t}\right)+r_{I}\left(s_{t}, a_{t}\right) 
+$$
+
+$r_{F}\left(s_{t}, a_{t}\right)$ final state reward(correct end configuration)
+
+$$
+ r_{F}\left(s_{t}, a_{t}\right)=r_{p}\left(s_{t}\right)+r_{\alpha}\left(s_{t}\right)+r_{c}\left(s_{t}\right)+r_{a}\left(a_{t}\right) 
+$$
+
+- $r_{p}\left(s_{t}\right)$ position reward
+- $r_{\alpha}\left(s_{t}\right)$ angle reward
+- $r_{c}\left(s_{t}\right)$ contact reward
+- $r_{a}\left(a_{t}\right)$ penalizes high action input
+
+
+
+$r_{I}\left(s_{t}, a_{t}\right)$ imitation state reward(more natural)
