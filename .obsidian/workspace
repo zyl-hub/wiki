@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "DDRLCPDHuman-RobotInteraction.md",
+            "file": "MDP.md",
             "mode": "source"
           }
         }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DDRLCPDHuman-RobotInteraction.md",
+                "file": "MDP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -77,14 +77,24 @@
                 "unlinkedCollapsed": true
               }
             }
+          },
+          {
+            "id": "1ba0fa4359c0e287",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
     "width": 273
   },
   "lastOpenFiles": [
+    "MDP.md",
     "DDRLCPDHuman-RobotInteraction.md",
     "EASAADRL.md",
     "论文索引.md",
@@ -93,7 +103,6 @@
     "index.md",
     "python.md",
     "s.t.md",
-    "Untitled.md",
-    "论文索引.pdf"
+    "Untitled.md"
   ]
 }
