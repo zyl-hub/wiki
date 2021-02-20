@@ -52,5 +52,17 @@ using low-dimensional environment state (object positions, arm state, etc.) as t
 
 ensure the accuracy of critic
 
+# DDPG with all extension
+
+$$
+ L_{\text {critic }}(a)=\lambda_{\text {nstep }} L_{\text {nstep }}(a) w_{i}+\lambda_{\text {1step }} L_{1 \text { step }}(a) w_{i}+\lambda_{L 2} L_{\text {reg }}^{Q}\left(\theta^{Q}\right) 
+$$
+$$
+ L_{\text {nstep }}(a)=\left(Q\left(s_{t}, a\right)-\sum_{i=0}^{N} \gamma^{i} r_{t+i}-\gamma^{N} \min _{i=1,2} Q_{i}^{*}\left(s_{t+N}, \pi^{*}\left(o_{t+N}\right)\right)\right)^{2} 
+$$
+$$
+ L_{\text {1step }}(a)=\left(Q\left(s_{t}, a\right)-r_{t}-\min _{i=1,2} Q_{i}^{*}\left(s_{t+1}, \pi^{*}\left(o_{t+1}\right)\right)\right)^{2} 
+$$
+
 
 
