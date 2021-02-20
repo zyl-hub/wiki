@@ -1,3 +1,5 @@
+[[论文索引#Position Control of Cable-Driven Robotic Soft Arm Based on Deep Reinforcement Learning PositionControlofCable-DrivenRoboticSoftArmBasedonDeepReinforcementLearning md]]
+
 # outline
 
 The purpose of this
