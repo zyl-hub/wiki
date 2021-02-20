@@ -32,7 +32,11 @@ seeding the training with demonstrations
 
 ## Behavioural Cloning
 
+当actor做出的action不如behavioural cloning时直接采用behavioural cloning
 
+## Reset to demonstration
+
+改变起始状态使得任务变得容易些
 
 
 
