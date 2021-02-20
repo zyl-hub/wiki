@@ -1,5 +1,7 @@
 [[论文索引#Sim-to-Real Reinforcement Learning for Deformable Object Manipulation Sim-to-RealReinforcementLearningforDeformableObjectManipulation md]]
 
+![[Pasted image 20210220211838.png]]
+
 deformable
 
 the large object configuration spaces

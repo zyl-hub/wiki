@@ -1,8 +1,10 @@
 [[论文索引#Demonstration-Guided Deep Reinforcement Learning of Control Policies for Dexterous Human-Robot Interaction Demonstration-GuidedDeepReinforcementLearningofControlPoliciesforDexterousHuman-RobotInteraction md]]
 
+![[Pasted image 20210220211709.png]]
+
 # task
 
-机器人握手击掌
+机器人握手击掌、握手
 
 # Difficulty
 
