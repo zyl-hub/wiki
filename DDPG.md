@@ -1,5 +1,11 @@
 # DDPG
 
+estimate Q by minimising the Bellman loss
+
+$$
+ L_{\text {critic }}=\left(Q\left(s_{t}, a_{t}\right)-r_{t}-Q^{*}\left(s_{t+1}, \pi^{*}\left(o_{t+1}\right)\right)\right)^{2} 
+$$
+
 minimize the loss to update critic parameters $\theta^{Q}$
 
 $$
@@ -9,6 +15,8 @@ $$
  y_{t}=r\left(s_{t}, a_{t}\right)+\gamma Q\left(s_{t+1}, a_{t+1} ; \theta^{Q}\right) 
 $$
 
+
+
 compute the gradients update the actor parameters $\theta^{\pi}$
 
 $$
@@ -16,6 +24,7 @@ $$
 $$
 
 apply it to actor neural network
+
 
 # techniques to stabilize convergence properties
 

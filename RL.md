@@ -5,3 +5,5 @@
 [DQN](DQN.md)
 
 [DDPG](DDPG.md)
+
+supervised learning methods
