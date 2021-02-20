@@ -28,3 +28,10 @@ collect image data by camera input into DQN -> motion
 
 ## state design
 
+使用了几个控制点的位置
+
+## reward design
+
+![[Pasted image 20210220134306.png]]
+
+使用距离来判断
