@@ -46,8 +46,11 @@ $$
 
 ## Asymmetric actor-critic
 
+uses high dimensional (RGB) partial observations as an input to the actor
 
+using low-dimensional environment state (object positions, arm state, etc.) as the input for the critic
 
+ensure the accuracy of critic
 
 
 
