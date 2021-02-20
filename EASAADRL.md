@@ -60,6 +60,8 @@ $$
 
 $c\left(s_{t}, \mathbf{w}_{t}, a_{t}^{\max }, a_{t}^{\min }\right)$ greater than a pre-specified constant threshold $\beta$ -> attack the states by adding pulses to make the user have random observations
 
+### Black-Box Strategically-Timed Attack by Adversarial Evolutionary Strategy
 
+parameter exploring policy gradients adversarial-strategic agent
 
-
+这种攻击可以使对抗环境下的算法性能明显下降
