@@ -44,6 +44,8 @@ $$
  y=r_{t}+\min _{i=1,2} Q_{i}^{*}\left(s_{t+1}, \pi\left(o_{t+1}\right)+\operatorname{clip}(\mathcal{N}(0, \sigma),-c, c)\right) 
 $$
 
+## Asymmetric actor-critic
+
 
 
 
