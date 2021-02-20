@@ -51,3 +51,15 @@ $$
 ## Enhanced White-Box Strategically-Timed Attack by Online Learning
 
 设想的场景为对于开放源码的强化学习算法的攻击
+
+### Weighted-Majority Potential Energy Function
+
+$$
+ \begin{aligned} c\left(s_{t}, \mathbf{w}_{t}, a_{t}^{\min }, a_{t}^{\max }\right) &=\frac{\mathbf{w}_{t}^{T} \exp \left(-\mathbf{Q}\left(s_{t}, a_{t}^{\max }\right)\right)}{\sum_{a_{t}^{(k)}} \mathbf{w}_{t}^{T} \exp \left(-\mathbf{Q}\left(s_{t}, a_{t}^{(k)}\right)\right)} \\ &-\frac{\mathbf{w}_{t}^{T} \exp \left(-\mathbf{Q}\left(s_{t}, a_{t}^{\min }\right)\right)}{\sum_{a_{t}^{(k)}} \mathbf{w}_{t}^{T} \exp \left(-\mathbf{Q}\left(s_{t}, a_{t}^{(k)}\right)\right)} \end{aligned} 
+$$
+
+$c\left(s_{t}, \mathbf{w}_{t}, a_{t}^{\max }, a_{t}^{\min }\right)$ greater than a pre-specified constant threshold $\beta$ -> attack the states by adding pulses to make the user have random observations
+
+
+
+

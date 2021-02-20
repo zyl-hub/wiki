@@ -34,7 +34,3 @@ $$
  Q\left(s_{t}, a_{t}\right)=\mathbb{E}_{\mathcal{M}}\left[R_{t} \mid s_{t}, a_{t}\right] 
 $$
 
-## AC
-
-[Actor-Critic](AC.md)
-

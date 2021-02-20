@@ -120,4 +120,35 @@ $$\mathcal{D}=
  \left\{\left(p_{t}^{i}, p_{t}^{j}, \alpha_{t}^{i}, \alpha_{t}^{j}\right)\right\}_{t=1}^{T} 
 $$
 
+use ablation study([[术语#ablation study]]) on reward function to show the influence of the different parts of reward function
+
+## reward parameters
+
+Input: $\mathcal{D}, d_{t}^{i j}, \Delta p_{t}^{i j}$
+
+$t_{\min } \leftarrow \arg \min d_{t}^{i j}, \quad j_{\min } \leftarrow \arg \min d_{t}^{i j}$
+
+$p_{s}^{j_{\min }} \leftarrow$ position of a $j_{\min }$ link in simulation
+
+$R_{\mathrm{c}}^{j_{\min }} \leftarrow$ rotation matrix of a $j_{\min }$ link in simulation
+
+$p_{g}^{i} \leftarrow p_{s}^{j_{\min }}+R_{s}^{j_{\min }} \Delta p_{t_{\min }}^{i j_{\min }}, \quad \alpha_{g}^{i} \leftarrow \alpha_{t_{\min }}^{i}$
+
+$p_{g t}^{i} \leftarrow p_{s}^{j_{\min }}+R_{s}^{j_{\min }} \Delta p_{t}^{i_{j} \min }, \quad \alpha_{g t}^{i} \leftarrow \alpha_{t}^{i}$
+
+return $p_{q}^{i}, \alpha_{q}^{i},\left\{\alpha_{q t}^{i} \mid t=1 . . t_{\min }\right\},\left\{p_{q t}^{i} \mid t=1 . . t_{\min }\right\}$
+
+$d_{t}^{i j}$ distance between rigid bodies
+
+relative position $\Delta p_{t}^{i j}$
+
+$$
+ \omega_{p}^{i}=K_{p} \frac{d_{\min }}{d_{t_{\min }}^{i j_{\min }}} 
+$$
+
+6 weights in the reward function to set
+
+$$
+ \left(K_{p}, K_{\alpha}, K_{c}, K_{a}, K_{p I}, K_{\alpha I}\right) 
+$$
 
