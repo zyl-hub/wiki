@@ -10,3 +10,12 @@ the large change in the configuration resulting from manipulation attempts
 
 end-to-end manner, mapping observations directly to actions bypassing explict modelling
 
+DDPG extension used
+
+Prioritised Replay
+
+
+
+
+
+

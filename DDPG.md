@@ -1,5 +1,11 @@
 # DDPG
 
+noisy policy
+
+$$
+ a_{t}=\pi\left(o_{t}\right)+N(0, \sigma) 
+$$
+
 estimate Q by minimising the Bellman loss
 
 $$
@@ -29,5 +35,8 @@ apply it to actor neural network
 # techniques to stabilize convergence properties
 
 - a replay buffer
+
+Sampling from a replay buffer stabilises training by removing temporal correlations and therefore reduces the changes in the distributions the networks are trying to learn
+
 - batch normalization
 - target networks
