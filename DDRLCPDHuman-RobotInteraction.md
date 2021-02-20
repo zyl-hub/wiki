@@ -65,7 +65,7 @@ $$
 $$
 
 - $r_{p}\left(s_{t}\right)$ position reward
-- 
+
 $$
  r_{p}\left(s_{t}\right)=-\sum_{i=1}^{N_{f}} \omega_{p}^{i} \| p_{g}^{i}-p_{r t}^{i} \mid 
 $$
