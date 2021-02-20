@@ -38,6 +38,13 @@ seeding the training with demonstrations
 
 改变起始状态使得任务变得容易些
 
+## TD3
+
+$$
+ y=r_{t}+\min _{i=1,2} Q_{i}^{*}\left(s_{t+1}, \pi\left(o_{t+1}\right)+\operatorname{clip}(\mathcal{N}(0, \sigma),-c, c)\right) 
+$$
+
+
 
 
 
