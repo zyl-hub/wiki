@@ -2,6 +2,8 @@
 
 ![[Pasted image 20210220211259.png]]
 
+[[MDP#model free]]
+
 # Difficulty
 
 delay, pixel-wise, pulsed-signals from attackers
