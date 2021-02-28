@@ -9,7 +9,7 @@ paper is to combine data-driven modeling with reinforcement learning
 
 directly learned from experience
 
-## 使用MLP对软体机械臂进行建模
+## The soft manipulator is modeled using MLP
 
 $$
  Q_{t}\left(s_{t}, a_{t}\right)=r_{t}+\alpha\left(r_{t}+\gamma \max _{a} Q_{t+1}\left(s_{t+1}, a\right)-Q_{t}\left(s_{t}, a\right)\right) 
@@ -22,7 +22,7 @@ in practice, there are often a large number of states, or even a continuous stat
 
 ## simulation
 
-DQN来做action选取，MLP负责返回状态并计算出当前行为的奖励值
+The DQN does the action selection, and the MLP returns the status and calculates the reward value for the current action
 
 ## real environment experiment
 
@@ -32,10 +32,10 @@ collect image data by camera input into DQN -> motion
 
 ## state design
 
-使用了几个控制点的位置
+The location of several control points is used to stand for the model
 
 ## reward design
 
 ![[Pasted image 20210220134306.png]]
 
-使用距离来判断
+Use distance to judge the reward

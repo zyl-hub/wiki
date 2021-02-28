@@ -4,7 +4,7 @@
 
 # task
 
-机器人握手击掌、握手
+Make Robot Handshake High five, shake hands like humans
 
 # Difficulty
 
@@ -27,17 +27,17 @@ show how to extract parameters from motion
 
 ## adding imitation reward to the policy results in motions that are perceived as more natural
 
-加入模仿奖励可以让机械臂的动作更为自然
+The addition of an imitation reward can make the robotic arm move more naturally
 
 # outlines
 
-奖励函数难以设计
+Reward functions are hard to design
 
 reward is based on tracking position and angle references from motion capture data
 
-parametrized reward function为了不同的手部互动而去设计，大多数的参数都是根据捕捉到的动作数据获得，只剩下6个相对容易调节的参数
+The Parametrized reward function is designed for different hand interactions. Most of the parameters are based on the captured motion data, leaving only six parameters that are relatively easy to adjust
 
-使用DDPG算法
+The DDPG algorithm is used
 
 policy
 
@@ -47,7 +47,7 @@ $$
 
 $\mathcal{N}$ is a sample from zero mean Normal distribution
 
-零平均正态分布
+zero mean normal distribution
 
 Our method is able to learn control policies of hand interactions
 using motion capture data of human demonstrations

@@ -34,11 +34,11 @@ seeding the training with demonstrations
 
 ## Behavioural Cloning
 
-当actor做出的action不如behavioural cloning时直接采用behavioural cloning
+The behavioral cloning is used directly when the action made by the actor is inferior to the behavioral cloning
 
 ## Reset to demonstration
 
-改变起始状态使得任务变得容易些
+Changing the starting state makes the task easier
 
 ## TD3
 
