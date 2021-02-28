@@ -5,7 +5,7 @@ DDPG algorithm is used to achieve human-like handshake and high-five task throug
 MLP was used to build the model of the soft manipulator, and DDPG algorithm was used to control the soft manipulator(Position Control of Cable-Driven Robotic Soft Arm
 Based on Deep Reinforcement Learning)
 
-(Sim-to-Real Reinforcement Learning for Deformable Object Manipulation)
+DDPG algorithm and its extension are used to implement a series of operations on objects with variable shape(Sim-to-Real Reinforcement Learning for Deformable Object Manipulation)
 
 
 
