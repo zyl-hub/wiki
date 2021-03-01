@@ -1,3 +1,7 @@
+# 添加或者移除组件
+
+Qt-maintenance tool
+
 # Qt简易项目文件结构
 
 .pro项目组织文件
