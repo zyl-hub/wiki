@@ -1,6 +1,6 @@
 # 添加或者移除组件
 
-Qt-maintenance tool
+Qt-maintenance tool可以更新和更改组件
 
 # Qt简易项目文件结构
 
