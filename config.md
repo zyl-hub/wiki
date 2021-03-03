@@ -1,3 +1,4 @@
+nohup ./script &后台运行
 
 npm init -y
 
